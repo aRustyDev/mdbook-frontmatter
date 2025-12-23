@@ -2,7 +2,7 @@
 name = "mdbook-frontmatter"
 version = "0.1.0"
 edition = "2021"
-rust-version = "1.78.0"
+rust-version = "1.85.0"
 authors = ["aRustyDev <36318507+aRustyDev@users.noreply.github.com>"]
 description = "MDBook preprocessor to validate or fix frontmatter against a JSON schema"
 license = "GPL-3.0-or-later"
