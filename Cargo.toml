@@ -1,0 +1,37 @@
+[package]
+name = "mdbook-frontmatter"
+version = "0.1.0"
+edition = "2021"
+authors = ["aRustyDev <36318507+aRustyDev@users.noreply.github.com>"]
+description = "MDBook preprocessor to validate or fix frontmatter against a JSON schema"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/aRustyDev/mdbook-frontmatter"
+keywords = ["mdbook", "frontmatter", "schema", "validation", "preprocessor"]
+categories = ["command-line-utilities", "text-processing"]
+
+[dependencies]
+mdbook = "0.4"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.9"
+jsonschema = "0.18"
+clap = { version = "4.0", features = ["derive"] }
+anyhow = "1.0"
+thiserror = "1.0"
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+url = "2.5"
+log = "0.4"
+env_logger = "0.10"
+toml = "0.5"
+
+[dev-dependencies]
+tempfile = "3.0"
+pretty_assertions = "1.0"
+
+[[bin]]
+name = "mdbook-frontmatter"
+path = "src/main.rs"
+
+[lib]
+name = "mdbook_frontmatter"
+path = "src/lib.rs"
